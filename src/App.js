@@ -1,11 +1,10 @@
 // import { IndexAsKey } from "./AntiPatterns/IndexAsKey";
 // import { PrimaryButton } from "./AntiPatterns/PrimaryButton";
 // import { NotWorkingCounter } from "./AntiPatterns/PropInInitialState";
-// import { CounterAndForm } from "./BadPractices/ex1/CounterAndForm";
-// import { QuestionContainer } from "./BadPractices/ex2/QuestionContainer";
-// import { QuestionContainer } from "./GoodPractices/ex2/QuestionContainer";
-// import { LoginForm } from "./GoodPractices/ex3/LoginForm";
-import "./styles.css";
+// import { CounterAndForm } from "./BadPractices/KeepComponentsSmall/CounterAndForm";
+// import { QuestionContainer } from "./BadPractices/SeparateStatefulAspects/QuestionContainer";
+// import { QuestionContainer } from "./GoodPractices/SeparateStatefulAspects/QuestionContainer";
+// import { LoginForm } from "./GoodPractices/KeepFilesRelatedToComponent/LoginForm";
 
 export default function App() {
   return (
