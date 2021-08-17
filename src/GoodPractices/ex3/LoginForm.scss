@@ -1,0 +1,44 @@
+.loginForm {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  &__input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 5px;
+
+    &:hover {
+      cursor: pointer;
+      background: lightgray;
+      transition: .25s;
+    }
+  }
+
+  &__submit {
+    background: lightgray;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 15px;
+
+    &:hover {
+      cursor: pointer;
+      background: lighten($color: lightgray, $amount: 5);
+      transition: .25s;
+    }
+  }
+}
+
