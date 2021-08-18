@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { QuestionList } from "./QuestionList";
+import { Error } from "./Error";
 
 // Separate stateful aspects from rendering
-// BAD EXAMPLE
-// We can seperate fetching data and displaying data
+// GOOD EXAMPLE
 
 export const QuestionContainer = () => {
   const [state, setState] = useState({
@@ -23,17 +24,9 @@ export const QuestionContainer = () => {
     getQuestions();
   }, [getQuestions]);
 
-  return (
-    <div>
-      {state.questions.map((question) => {
-        const { category, question: questionContent } = question;
-        return (
-          <div>
-            <p>Category: {category}</p>
-            <p>Question: {questionContent}</p>
-          </div>
-        );
-      })}
-    </div>
-  );
+  if (state.error) {
+    return <Error />;
+  }
+
+  return <QuestionList questions={state.questions} />;
 };
